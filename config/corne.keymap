@@ -23,7 +23,7 @@
 &kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                                &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 4  &kp RALT
+                                &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
 
@@ -42,15 +42,6 @@
             >;
         };
 
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans       &kp N7        &kp N8        &kp N9        &trans      &trans     &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp MINUS  &trans
-                        &trans  &trans  &kp SPACE    &kp ENTER     &kp N0        &trans
-            >;
-        };
-
         raise_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
@@ -59,19 +50,28 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp AT_SIGN  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans       &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans       &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB           &kp EXCLAMATION  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LSHIFT        &trans           &trans  &to 3     &to 4     &trans       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LEFT_CONTROL  &kp LESS_THAN    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                           &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&kp F12           &kp F1                &kp F2                &kp F3           &kp F4            &kp F5        &kp F6     &kp F7         &kp F8         &kp F9   &kp F10  &kp F11
+&kp LEFT_SHIFT    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP    &kp END  &trans   &trans
+&kp LEFT_CONTROL  &kp K_MUTE            &kp C_VOLUME_DOWN     &kp C_VOLUME_UP  &trans            &trans        &trans     &trans         &trans         &trans   &kp DEL  &kp ESCAPE
+                                                              &kp LEFT_WIN     &trans            &kp SPACE     &kp ENTER  &kp N0         &kp RIGHT_ALT
             >;
         };
 
         layer_4 {
             bindings = <
-&kp TAB           &kp PERIOD  &kp COMMA  &trans        &kp P   &kp Y        &kp F      &kp G   &kp C   &kp H  &kp L  &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A       &kp O      &kp E         &kp U   &kp I        &kp D      &kp R   &kp T   &kp N  &kp S  &kp LEFT_BRACE
-&kp LEFT_CONTROL  &kp MINUS   &kp Q      &kp J         &kp K   &kp X        &kp B      &kp M   &kp W   &kp V  &kp Z  &kp ESC
-                                         &kp LEFT_WIN  &trans  &kp SPACE    &kp ENTER  &trans  &trans
+&kp TAB           &kp PERIOD  &kp COMMA  &kp SEMICOLON  &kp P  &kp Y        &kp F      &kp G  &kp C   &kp H  &kp L  &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A       &kp O      &kp E          &kp U  &kp I        &kp D      &kp R  &kp T   &kp N  &kp S  &kp SQT
+&kp LEFT_CONTROL  &kp SLASH   &kp Q      &kp J          &kp K  &kp X        &kp B      &kp M  &kp W   &kp V  &kp Z  &kp ESC
+                                         &kp LEFT_WIN   &mo 1  &kp SPACE    &kp ENTER  &mo 2  &trans
             >;
         };
     };
