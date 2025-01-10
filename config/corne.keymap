@@ -24,7 +24,7 @@
 &kp TAB            &kp Q           &kp W           &kp E                 &kp R             &kp T        &kp Y    &kp U              &kp I                &kp O            &kp P               &kp BSPC
 &mt LSHIFT ESCAPE  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D    &mt LEFT_SHIFT F  &kp G        &kp H    &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_WIN SEMI  &kp SQT
 &lt 3 ESC          &kp Z           &kp X           &kp C                 &kp V             &kp B        &kp N    &kp M              &kp COMMA            &kp DOT          &kp FSLH            &mt RSHIFT ESC
-                                                   &mt LEFT_CONTROL DEL  &lt 1 TAB         &kp SPACE    &kp RET  &lt 2 BACKSPACE    &kp RALT
+                                                   &mt LEFT_CONTROL DEL  &lt 1 TAB         &kp SPACE    &kp RET  &lt 2 BACKSPACE    &kp MINUS
             >;
         };
 
@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB            &kp N1          &kp N2      &kp UP      &kp N4        &kp N5          &kp N6        &kp N7        &kp N8        &kp N9        &kp N0  &kp BSPC
-&mt LSHIFT ESCAPE  &kp LEFT_SHIFT  &kp LEFT    &kp DOWN    &kp RIGHT     &out OUT_TOG    &kp LEFT      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&kp LEFT_CONTROL   &bt BT_CLR      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0  &out OUT_TOG    &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans
-                                               &kp LGUI    &trans        &kp SPACE       &kp RET       &trans        &kp RALT
+&kp TAB            &kp N1          &kp N2      &kp UP      &kp N4        &kp N5          &kp N6                 &kp N7        &kp N8        &kp N9        &kp N0           &kp BSPC
+&mt LSHIFT ESCAPE  &kp LEFT_SHIFT  &kp LEFT    &kp DOWN    &kp RIGHT     &out OUT_TOG    &kp LEFT               &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS        &trans
+&kp LEFT_CONTROL   &bt BT_CLR      &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0  &out OUT_TOG    &kp RIGHT_PARENTHESIS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_MULTIPLY  &kp RC(PLUS)
+                                               &kp LGUI    &trans        &kp SPACE       &kp RET                &trans        &kp PERIOD
             >;
         };
 
